@@ -1,0 +1,66 @@
+#treads-single-post {
+  margin-bottom: 100px;
+}
+
+#treads-single-post .single-post-header {
+  color: #fdfffc;
+  padding-top: 150px;
+}
+
+#treads-single-post .def-post-header {
+  background-color: #085e9a;
+}
+
+#treads-single-post .publications-post-header {
+  background-color: #365971;
+}
+
+.publications-post-header .post-meta {
+  margin-bottom: 30px;
+}
+
+.publications-post-header img {
+  width: 100%;
+  height: auto;
+}
+
+.single-post-header .post-title {
+  font-size: 45px;
+  margin: 0 0 30px;
+  line-height: 1.4;
+}
+
+.bg-wave {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
+}
+
+a.btn-tread-download {
+  color: #000000;
+  font-size: 18px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  line-height: 18px;
+  padding: 18px 36px;
+  text-align: center;
+  border-radius: 5px;
+  background: #edab28;
+  border: 1px solid #edab28;
+  text-decoration: none;
+}
+
+a.btn-tread-download:hover {
+  background: #10baee;
+  border-color: #10baee;
+}
+
+/* -------------------------- MEDIA QUERIES ------------------------- */
+@media(max-width: 780px){
+  .single-post-header .col-sm-8 {
+    margin-bottom: 30px;
+  }
+}
