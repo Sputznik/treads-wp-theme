@@ -9,8 +9,8 @@ $thumbnail_url  = wp_get_attachment_image_src( $thumbnail_id, 'full' )[0];
       <div class="col-sm-8">
         <h1 class="post-title"><?php the_title();?></h1>
         <div class="post-meta">
+          <p><?php echo do_shortcode("[treads_post_authors]"); ?></p>
           <p><?php the_time( 'jS F Y' ); ?></p>
-          <p>By <a href="<?php echo get_author_posts_url( $post->post_author );?>"><?php the_author(); ?></a></p>
         </div>
         <?php if( $pdf_url ): ?>
           <a href="<?php _e( $pdf_url ); ?>" class="btn-tread-download" download>

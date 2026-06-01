@@ -16,7 +16,8 @@ if( !defined( 'TREADS_THEME_PATH' ) ) {
 // INCLUDE FILES
 $inc_files = array(
   'lib/class-treads-theme.php',
-  'lib/treads-orbit-cf.php'
+  'lib/treads-orbit-cf.php',
+  'lib/class-treads-coauthors.php'
 );
 
 foreach( $inc_files as $inc_file ){ require_once( $inc_file ); }
