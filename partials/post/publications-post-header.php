@@ -1,7 +1,7 @@
 <?php
 $pdf_url        =  get_post_meta( $post->ID, 'pdf_link', true );
 $thumbnail_id   = get_post_thumbnail_id( $post->ID );
-$thumbnail_url  = wp_get_attachment_image_src( $thumbnail_id, 'full' )[0];
+$thumbnail_url  = wp_get_attachment_image_src( $thumbnail_id, 'full' );
 ?>
 <div class="single-post-header publications-post-header">
   <div class="container">
@@ -21,10 +21,10 @@ $thumbnail_url  = wp_get_attachment_image_src( $thumbnail_id, 'full' )[0];
       </div>
       <div class="col-sm-4">
         <?php
-          if( $thumbnail_url ): $thumbnail_alt = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
+          if( !empty( $thumbnail_url ) ): $thumbnail_alt = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
           if( !$thumbnail_alt ){ $thumbnail_alt = get_the_title( $thumbnail_id ); }
         ?>
-          <img src="<?php _e( $thumbnail_url ); ?>" alt="<?php _e( $thumbnail_alt ); ?>" />
+          <img src="<?php _e( $thumbnail_url[0] ); ?>" alt="<?php _e( $thumbnail_alt ); ?>" />
         <?php endif; ?>
       </div>
     </div>

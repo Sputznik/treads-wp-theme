@@ -1,6 +1,6 @@
 <?php
-$thumbnail      = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' )[0];
-$background_img = !empty( $thumbnail ) ? 'style="background-image:url('.$thumbnail.');"' : "";
+$thumbnail      = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+$background_img = !empty( $thumbnail ) ? 'style="background-image:url('.$thumbnail[0].');"' : "";
 ?>
 <div class="single-post-header def-post-header">
   <div class="container">
