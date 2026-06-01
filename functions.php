@@ -2,7 +2,7 @@
 
 /*  CONSTANTS */
 if( !defined( 'TREADS_THEME_VERSION' ) ) {
-  define( 'TREADS_THEME_VERSION', time() );
+  define( 'TREADS_THEME_VERSION', '1.1.0' );
 }
 
 if( !defined( 'TREADS_THEME_URI' ) ) {
